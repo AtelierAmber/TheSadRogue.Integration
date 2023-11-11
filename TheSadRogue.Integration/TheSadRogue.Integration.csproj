@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- Basic package information -->
-    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>net7.0</TargetFrameworks>
     <Authors>Chris3606, fcheadle, Thraka</Authors>
     <Company>TheSadRogue</Company>
     <Copyright>Copyright © 2023 Christopher Ridley (Chris3606), Forrest Cheadle (fcheadle), Steve De George JR (Thraka)</Copyright>
@@ -80,6 +80,9 @@
 	</PackageReference>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
     <PackageReference Include="SadConsole" Version="10.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GoRogue\GoRogue\GoRogue.csproj" />
   </ItemGroup>
 
   <!-- When packing, copy the nuget files to the nuget output directory -->

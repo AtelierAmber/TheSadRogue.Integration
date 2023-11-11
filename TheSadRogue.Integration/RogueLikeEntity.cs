@@ -235,7 +235,7 @@ namespace SadRogue.Integration
             IsTransparent = transparent;
 
             ID = idGenerator();
-            GoRogueComponents = customComponentContainer ?? new ComponentCollection();
+            GoRogueComponents = customComponentContainer ?? new ComponentCollection(this);
             GoRogueComponents.ParentForAddedComponents = this;
             AllComponents.ComponentAdded += On_GoRogueComponentAdded;
             AllComponents.ComponentRemoved += On_GoRogueComponentRemoved;
