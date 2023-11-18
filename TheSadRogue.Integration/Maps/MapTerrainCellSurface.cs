@@ -125,6 +125,9 @@ namespace SadRogue.Integration.Maps
         }
 
         /// <inheritdoc />
+        public ColoredGlyphBase[] this[Range range] => throw new NotImplementedException("Range Indexer in MapTerrainCellSurface");
+
+        /// <inheritdoc />
         public event EventHandler? IsDirtyChanged;
         #endregion
 
